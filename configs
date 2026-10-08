@@ -1,0 +1,9 @@
+//Sway
+bindsym $mod+Shift+p exec ~/.config/waybar/waybar-pos.sh
+//i3
+bindsym $mod+Shift+p exec ~/.config/waybar/waybar-pos.sh
+//Hyprland v0.55 >
+hl.bind("SUPER + SHIFT + P", hl.dsp.exec_cmd("~/.config/waybar/waybar-pos.sh"))
+//Hyprland v0.54 <
+bind = $mod SHIFT, P, exec, ~/.config/waybar/waybar-pos.sh
+
