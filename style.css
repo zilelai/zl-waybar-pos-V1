@@ -1,3 +1,8 @@
+/*ZL-Waybar-Pos V1 made by ZL RPOJECTS / ZLLAI26
+THIS PROJECT IS LICENSED IN GPL 3.0 */
+
+
+/*This sets all of the icons/containers to this config*/
 * {
     font-family: "Adwaita Sans";
     font-size: 11px;
@@ -5,10 +10,16 @@
     min-width: 0;
 }
 
+
+/*The bar is set to transparent*/
 window#waybar {
     background-color: rgba(30, 30, 46, 0.0);
     color: #E2E1E6;
 }
+
+
+
+/*The right module that is preset in the config.jsonc file and tray spacing has a margin of 3px (x) and 4px (y)*/
 
 #workspaces,
 #taskbar,
@@ -22,6 +33,10 @@ window#waybar {
     margin: 3px 4px;
 }
 
+
+
+/*Workspaces button UI*/
+
 #workspaces button {
     padding: 4px 6px;
     color: #E2E1E6;
@@ -31,9 +46,13 @@ window#waybar {
     border-radius: 6px;
 }
 
+/*Workspaces button UI when  hover*/
+
 #workspaces button:hover {
     background-color: rgba(49, 50, 68, 0.5);
 }
+
+/*Workspaces button UI when the woerkspace is active*/
 
 #workspaces button.focused,
 #workspaces button.visible {
@@ -41,10 +60,15 @@ window#waybar {
     color: #89b4fa;
 }
 
+
+/*Workspaces button UI when the woerkspace demands your attention*/
+
 #workspaces button.urgent {
     background-color: #f38ba8;
     color: #11111b;
 }
+
+/*config of taskbar's button*/
 
 #taskbar button {
     background: transparent;
@@ -54,11 +78,14 @@ window#waybar {
     border: none;
     box-shadow: none;
 }
+/*config of taskbar's button when it is on use*/
 
 #taskbar button.active {
     background-color: #313244;
     color: #89b4fa;
 }
+
+/*The right module that is preset in the config.jsonc file spacing has a padding of 6px (x) and 6px (y)*/
 
 #battery,
 #network,
@@ -71,13 +98,19 @@ window#waybar {
     padding: 6px 6px;
 }
 
+/*padding of tray*/
+
 #tray {
     padding: 0 6px;
 }
+/*if battery is charging then show green colour (a6e3a1)*/
 
 #battery.charging {
     color: #a6e3a1;
 }
+
+
+/*if network is disconnected then show red colour (a10e1d)*/
 
 #network.disconnected {
     color: #a10e1d;
