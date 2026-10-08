@@ -1,17 +1,31 @@
+/*THIS IS ZL-WAYBAR-POS V1 AND IT IS MADE BY ZL PROJECTS / ZLLAI26
+THIS IS LICENSED WITH GNU GPL 3.0*/
+
+
+//This sets the position to where when it was initialized
 {
     "layer": "top",
     "position": "top",
     "height": 32,
     "spacing": 4,
 
+//This sets what stuff to put on the left, middle and right.
+//Left = workspaces
+//Middle = Application Taskbar
+//Right = System Configuration
+
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["pulseaudio", "network", "bluetooth", "battery", "clock#time", "clock#date", "tray"],
 
+
+//This is the configuration of workspaces
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true
     },
+
+//This is the configuration of Application Taskbar
 
     "wlr/taskbar": {
         "format": "{icon}",
@@ -20,11 +34,14 @@
         "on-click": "activate",
         "on-click-middle": "close"
     },
+//This is the configuraton of PulseAudio
 
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
     },
+
+//This is the configuration of network
 
     "network": {
         "format-wifi": "{essid} ",
@@ -32,27 +49,36 @@
         "format-disconnected": "No Internet ⚠"
     },
 
+//This is the configuration of bluetooth
+
     "bluetooth": {
         "format": " {status}",
         "format-disabled": "",
         "format-connected": " {num_connections}"
     },
 
+//This is the configuration of battery
+
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+
+//This is the configuration of time module inside clock "library"
 
     "clock#time": {
         "format": "{:%I:%M %p}",
         "tooltip": false
     },
 
+//This is the configuration of week module inside clock "library"
+
     "clock#week": {
         "format": "{:%A, %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
+//Sets the spacing between each block
     "tray": {
         "spacing": 10
     }
