@@ -1,0 +1,84 @@
+* {
+    font-family: "Adwaita Sans";
+    font-size: 11px;
+    min-height: 0;
+    min-width: 0;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.0);
+    color: #E2E1E6;
+}
+
+#workspaces,
+#taskbar,
+#clock.time,
+#clock.date,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#tray {
+    margin: 3px 4px;
+}
+
+#workspaces button {
+    padding: 4px 6px;
+    color: #E2E1E6;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(49, 50, 68, 0.5);
+}
+
+#workspaces button.focused,
+#workspaces button.visible {
+    background-color: #313244;
+    color: #89b4fa;
+}
+
+#workspaces button.urgent {
+    background-color: #f38ba8;
+    color: #11111b;
+}
+
+#taskbar button {
+    background: transparent;
+    color: #cdd6f4;
+    border-radius: 6px;
+    padding: 4px 6px;
+    border: none;
+    box-shadow: none;
+}
+
+#taskbar button.active {
+    background-color: #313244;
+    color: #89b4fa;
+}
+
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#clock.date,
+#clock.time {
+    background-color: #313244;
+    border-radius: 6px;
+    padding: 6px 6px;
+}
+
+#tray {
+    padding: 0 6px;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+#network.disconnected {
+    color: #a10e1d;
+}
