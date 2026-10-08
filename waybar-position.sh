@@ -1,3 +1,7 @@
+#CODE IS EXPLAINED
+#MADE BY ZL PROJECTS/ZLLAI26
+#GNU GPL 3.0 LICENSE
+
 #!/usr/bin/env bash
 
 #grabs the information from config.jsonc
